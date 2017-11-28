@@ -20,5 +20,8 @@ public class EvenNumberGenerator {
 		}
 		return result;
 	}
-
+	//adding some new staff
+	public void printSomething() {
+		System.out.println("This is hello world");
+	}
 }
