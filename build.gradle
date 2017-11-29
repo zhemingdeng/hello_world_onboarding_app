@@ -7,6 +7,7 @@ buildscript {
     	classpath 'org.spockframework:spock-core:1.0-groovy-2.3'
     	classpath 'com.netflix.nebula:gradle-ospackage-plugin:2.0.2'
     	classpath 'com.bmuschko:gradle-nexus-plugin:2.3.1'
+    	classpath 'org.sonarsource.scanner.gradle:sonarqube-gradle-plugin:2.6'
     }
 }
 
@@ -28,7 +29,7 @@ apply plugin: 'nebula.rpm'
 apply plugin: 'pmd'
 apply plugin: "findbugs"
 apply plugin: 'checkstyle'
-apply plugin: "sonar-runner"
+apply plugin: "org.sonarqube"
 
 jacocoTestReport {
     reports {
@@ -106,10 +107,10 @@ sonarRunner {
         property "sonar.host.url", "http://172.31.2.109:9000"
         property "sonar.username", "admin"
         property "sonar.password", "admin"
-        property "sonar.jdbc.url", "jdbc:mysql://172.31.2.109:3306/sonar?useUnicode=true&characterEncoding=utf8&rewriteBatchedStatements=true&useConfigs=maxPerformance"
-        property "sonar.jdbc.driverClassName", "com.mysql.jdbc.Driver"
-        property "sonar.jdbc.username", "sonarqube"
-        property "sonar.jdbc.password", "coveros1"
+        //property "sonar.jdbc.url", "jdbc:mysql://172.31.2.109:3306/sonar?useUnicode=true&characterEncoding=utf8&rewriteBatchedStatements=true&useConfigs=maxPerformance"
+        //property "sonar.jdbc.driverClassName", "com.mysql.jdbc.Driver"
+        //property "sonar.jdbc.username", "sonarqube"
+        //property "sonar.jdbc.password", "coveros1"
         property "sonar.java.source", "1.8"
         //property "sonar.java.binaries","target/classes"
 		//property "sonar.java.libraries", "Java Resources/Libraries/JRE System Library/*.jar"
