@@ -112,6 +112,6 @@ sonarRunner {
         property "sonar.jdbc.password", "coveros1"
         property "sonar.java.source", "1.8"
         //property "sonar.java.binaries=target/**/classes/*.class"
-		property "sonar.java.libraries=Java Resources/JRE System Library/*.jar"
+		property "sonar.java.libraries=Java Resources/Libraries/JRE System Library/*.jar"
     }
 }
