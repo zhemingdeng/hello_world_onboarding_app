@@ -102,8 +102,8 @@ pmd {
   ]
 }
 
-sonarRunner {
-    sonarProperties {
+sonarqube {
+    		properties {
         property "sonar.host.url", "http://172.31.2.109:9000"
         property "sonar.username", "admin"
         property "sonar.password", "admin"
