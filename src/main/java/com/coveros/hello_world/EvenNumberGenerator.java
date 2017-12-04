@@ -24,4 +24,5 @@ public class EvenNumberGenerator {
 	public void printSomething() {
 		System.out.println("This is hello world");
 	}
+	//add comment for wrap-up 1.0
 }
